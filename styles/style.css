@@ -1,0 +1,134 @@
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+    font-family: "inter";
+    font-size: 16px;
+    color: #D6D6D6;
+    text-align: center;
+}
+
+body {
+    background-color: #121212;
+
+}
+
+#subtitle {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#main {
+    box-shadow: 0px 0px 40px #D6D6D6;
+    border-radius: 10px;
+    background-color: #242424;
+    box-sizing: border-box;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+}
+
+input {
+    background-color: #484848;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    color: #D6D6D6;
+}
+
+input::placeholder {
+    color: #D6D6D6;
+}
+
+#generatePasswordButton {
+    margin-left: 5px;
+    background-color: #484848;
+    border: none;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+#generatePasswordButton:hover {
+    background-color: #606060;
+    cursor: pointer;
+}
+
+#generatePasswordButton:active {
+    background-color: #363636;
+}
+
+#copyToClipboard {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: obsolute;
+}
+
+#copyToClipboard:hover {
+    cursor: pointer;
+    background-color: #484848;
+}
+
+#copyToClipboard:active {
+    cursor: pointer;
+    background-color: #606060;
+}
+
+#generatedPassword {
+    word-break: break-all;
+}
+
+#snackbar {
+    border: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D6D6D6;
+    visibility: hidden;
+    padding: 10px;
+    background-color: #242424;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        transform: translate(-50%, -0%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -100%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        transform: translate(-50%, -100%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(-50%, -0%);
+        opacity: 0;
+    }
+}
+
+#me {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
